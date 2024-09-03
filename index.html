@@ -35,6 +35,23 @@
             display: inline-block;
             font-weight: bold;
             color:black;
+            background-color: lightgray;
+        }
+
+        .eq-button{
+            width: 128px;
+            height: 64px;
+            border-radius: 5px;
+            padding: 0px;
+            font-size: 16px;
+            margin: 2px 1px;
+
+            vertical-align: middle;
+            align-items: center;
+            display: inline-block;
+            font-weight: bold;
+            color:black;
+            background-color: gray;
         }
 
         .num-button{
@@ -64,10 +81,10 @@
         <label for="expression"></label>
         <input class = visor type="text" id="input" name="expression" />
         <br>
-        <button class="op-button" name = 'b-clear' id = 'b-clear'>C</button>
         <button class="op-button" name = 'b-mod' id = 'b-mod'>%</button>
+        <button class="op-button" name = 'b-clear' id = 'b-clear'>C</button>
         <button class="op-button" name = 'b-erase' id = 'b-erase'>⌫</button>
-        <button class="op-button" name = 'b-result' id = 'b-result'>=</button>
+        <button class="eq-button" name = 'b-result' id = 'b-result'>=</button>
         <br>
         <button class="num-button" name = 'b-1' id = 'b-1'>1</button>
         <button class="num-button" name = 'b-2' id = 'b-2'>2</button>
@@ -82,8 +99,17 @@
         <button class="num-button" name = 'b-7' id = 'b-7'>7</button>
         <button class="num-button" name = 'b-8' id = 'b-8'>8</button>
         <button class="num-button" name = 'b-9' id = 'b-9'>9</button>
+        <button class="op-button" name = 'b-add' id = 'b-add'>+</button>
+        <br>
+        <button class="op-button" name = 'b-dot' id = 'b-dot'>.</button>
+        <button class="num-button" name = 'b-0' id = 'b-0'>0</button>
+        <button class="op-button" name = 'b-empty' id = 'b-empty'></button>
+        <button class="op-button" name = 'b-sub' id = 'b-sub'>-</button>
+        <br>
+        <button class="op-button" name = 'b-empty' id = 'b-empty'></button>
+        <button class="op-button" name = 'b-lbrac' id = 'b-lbrac'>(</button>
+        <button class="op-button" name = 'b-rbrac' id = 'b-rbrac'>)</button>
         <button class="op-button" name = 'b-exp' id = 'b-exp'>^</button>
-
         <br><br><br>
         <p name = 'result' id ='result'></p>
 
