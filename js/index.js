@@ -35,7 +35,7 @@ const resultField = document.getElementById('result');
 bResult.addEventListener('click', () =>{
     const text = inputField.value;
     const r = calculate_expression(text);
-    resultField.textContent = r.toFixed(2);
+    inputField.value = r.toFixed(2);
 });
 
 bClear.addEventListener('click', ()=>{
