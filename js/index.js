@@ -40,7 +40,6 @@ bResult.addEventListener('click', () =>{
 
 bClear.addEventListener('click', ()=>{
     inputField.value = '';
-    resultField.textContent = '';
 });
 
 /*-------------------------------------------
