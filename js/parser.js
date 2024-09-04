@@ -155,7 +155,6 @@ function calculateRPN(rpn){
 };
 
 export function calculate_expression(expr){
-    console.log(result);
     return calculateRPN(convertToRPN(tokenize(expr)));
 }
 
