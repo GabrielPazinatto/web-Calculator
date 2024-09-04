@@ -2,6 +2,8 @@
 
 I wanted to learn how math expressions parsers worked and basic html + javascript, so I did a small project that uses all of it.
 
+See the page for the project in [this link](https://gabrielpazinatto.github.io/web-Calculator/).
+
 ## About the calculator
 
 The project consists in three files: index.html, parser.js and index.js. index.html contains the UI for the calculator, while index.js implements functionalities for all the buttons and parser.js adds the function that processes the expression.
@@ -58,3 +60,22 @@ OperandStack <= []
 
 8. Return the remaining item in the stack. 
 ```
+
+#### Example
+
+<center>
+
+`9 6 2 / + 4 - ====> 8`
+
+| Current token | Operand Stack |
+| :---: | :---:|
+| 9 | [9]|
+| 6 | [9, 6]|
+| 2 | [9, 6, 2]|
+| / | [9, 3] |
+| + | [12] |
+| 4 | [12, 4]|
+| - | [8]|
+| None| 8|
+
+</center>
