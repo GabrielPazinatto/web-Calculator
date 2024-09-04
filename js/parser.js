@@ -4,7 +4,7 @@ const lBracket = 'L_BRACKET'; // '('
 const rBracket = 'R_BRACKET'; // ')'
 
 // TODO: add more operations
-const operators = ['+', '-', '*', '/', '^'];
+const operators = ['+', '-', '*', '/', '^', '%'];
 
 // used to decide the order of operations
 var precedences = {};
@@ -13,6 +13,7 @@ precedences = {
     '-': 1,
     '*': 2,
     '/': 2,
+    '%': 2,
     '^': 3
 };
 
@@ -23,6 +24,7 @@ operations = {
     '-': (a, b) => a-b,
     '*': (a, b) => a*b,
     '/': (a, b) => a/b,
+    '%': (a, b) => a%b,
     '^': (a, b) => a**b  
 };
 
@@ -39,7 +41,7 @@ function tokenize(expr){
     //regex to get all values, operators and delimiters
     // (\d+(\.\d+)?) gets ints and floats
     // ([+\-*/^()]) gets the other operators
-    const re = /(\d+(\.\d+)?)|([+\-*/^()])/g;
+    const re = /(\d+(\.\d+)?)|([+\-*/^()%])/g;
     const tokens = expr.match(re);
     var tokenized = [];
 
